@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/11/17 14:40:22 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/11/30 18:02:06 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,5 +101,7 @@ int				ft_lstcount(t_list *list);
 t_list			*ft_lstindex(t_list	*list, size_t index);
 t_list			*ft_strlstsplit(char const *str, char c);
 void			*ft_lstfold(t_list *lst, void *(*f)(void *e1, void *e2));
+
+int				ft_putwchar(unsigned int chr);
 
 #endif
