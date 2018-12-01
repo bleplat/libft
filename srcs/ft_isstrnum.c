@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/01 14:19:47 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/01 14:24:27 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/01 14:26:13 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int				ft_isstrnum(const char *str)
 {
 	int		i;
 
+	if (str == NULL)
+		return (0);
 	i = 0;
 	if (str[i] == '-')
 		i++;
