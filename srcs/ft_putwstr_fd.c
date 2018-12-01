@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putwchar.c                                      :+:      :+:    :+:   */
+/*   ft_putwstr_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/29 22:42:25 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/01 14:12:13 by bleplat          ###   ########.fr       */
+/*   Created: 2018/12/01 13:43:20 by bleplat           #+#    #+#             */
+/*   Updated: 2018/12/01 14:11:38 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int					ft_putwchar(int chr)
+int			ft_putwstr_fd(const int *str, int fd)
 {
-	return (ft_putwchar_fd(chr, 1));
+	int		i;
+	int		sum;
+
+	i = 0;
+	sum = 0;
+	while (str[i] != 0)
+	{
+		sum += ft_putwchar_fd(str[i], fd);
+		i++;
+	}
+	return (sum);
 }

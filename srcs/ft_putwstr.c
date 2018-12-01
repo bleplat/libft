@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putwchar.c                                      :+:      :+:    :+:   */
+/*   ft_putwstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/29 22:42:25 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/01 14:12:13 by bleplat          ###   ########.fr       */
+/*   Created: 2018/12/01 13:39:37 by bleplat           #+#    #+#             */
+/*   Updated: 2018/12/01 14:11:51 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int					ft_putwchar(int chr)
+int				ft_putwstr(const int *str)
 {
-	return (ft_putwchar_fd(chr, 1));
+	return (ft_putwstr_fd(str, 1));
 }
