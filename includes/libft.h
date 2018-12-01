@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/01 14:22:14 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/01 14:30:07 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,6 +106,7 @@ int				ft_putwchar_fd(int chr, int fd);
 int				ft_putwchar(int chr);
 int				ft_putwstr_fd(const int *str, int fd);
 int				ft_putwstr(const int *str);
+int				ft_wstrlen(const int *str);
 
 int				ft_isstrnum(const char *str);
 
