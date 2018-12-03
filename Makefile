@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/03 13:59:40 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/03 14:11:28 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,7 +99,7 @@ FNT = ft_atoi \
 
 INCLUDES = includes
 SRC_DIR = srcs
-OBJ_DIR = .
+OBJ_DIR = obj
 
 CFLAGS = -Wall -Werror -Wextra -O3
 
@@ -120,6 +120,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INCLUDES)/libft.h | $(OBJ_DIR)
 
 clean:
 	rm -f $(OBJ)
+	rm -f $(OBJ_DIR)/*.o
 
 fclean: clean
 	rm -f $(NAME)
