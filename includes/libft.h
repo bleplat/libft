@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/03 13:58:43 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/03 14:53:24 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 # define LIBFT_H
 
 # include <string.h>
+
+/*
+** Part I
+*/
 
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
@@ -44,6 +48,10 @@ int				ft_isprint(int c);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 
+/*
+** Part II
+*/
+
 void			*ft_memalloc(size_t size);
 void			ft_memdel(void **ap);
 char			*ft_strnew(size_t size);
@@ -69,6 +77,10 @@ void			ft_putstr_fd(char const *s, int fd);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 
+/*
+** Lst Bonus
+*/
+
 typedef struct	s_list
 {
 	void			*content;
@@ -82,6 +94,10 @@ void			ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void			ft_lstadd(t_list **alst, t_list *newe);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+/*
+** Other
+*/
 
 int				ft_min(int a, int b);
 int				ft_max(int a, int b);
@@ -111,5 +127,8 @@ int				ft_wstrlen(const int *str);
 int				ft_isstrnum(const char *str);
 int				ft_strbegins(const char *s1, const char *s2);
 int				ft_strends(const char *s1, const char *s2);
+
+t_list			*ft_lstpop(t_list **list, t_list *item);
+const void		*ft_pushpop(const void *to_push);
 
 #endif
