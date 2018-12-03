@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/03 14:53:24 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/03 17:26:07 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include <string.h>
+
+# include "libft_intdefs.h"
 
 /*
 ** Part I
@@ -96,6 +98,28 @@ void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 /*
+** Other list related
+*/
+
+t_list			*ft_lstlast(t_list *list);
+int				ft_lstcount(t_list *list);
+t_list			*ft_lstindex(t_list	*list, size_t index);
+t_list			*ft_strlstsplit(char const *str, char c);
+void			*ft_lstfold(t_list *lst, void *(*f)(void *e1, void *e2));
+
+t_list			*ft_lstpop(t_list **list, t_list *item);
+
+/*
+** Unicode stuff
+*/
+
+int				ft_putwchar_fd(int chr, int fd);
+int				ft_putwchar(int chr);
+int				ft_putwstr_fd(const int *str, int fd);
+int				ft_putwstr(const int *str);
+int				ft_wstrlen(const int *str);
+
+/*
 ** Other
 */
 
@@ -112,23 +136,13 @@ void			*ft_memdup(const void *s1, size_t size);
 char			*ft_strndup(const char *s1, size_t n);
 int				ft_memrealloc(void **mem, size_t *prev_size, size_t new_size);
 void			ft_free_vectors(void *to_free, int array_layers);
-t_list			*ft_lstlast(t_list *list);
-int				ft_lstcount(t_list *list);
-t_list			*ft_lstindex(t_list	*list, size_t index);
-t_list			*ft_strlstsplit(char const *str, char c);
-void			*ft_lstfold(t_list *lst, void *(*f)(void *e1, void *e2));
-
-int				ft_putwchar_fd(int chr, int fd);
-int				ft_putwchar(int chr);
-int				ft_putwstr_fd(const int *str, int fd);
-int				ft_putwstr(const int *str);
-int				ft_wstrlen(const int *str);
 
 int				ft_isstrnum(const char *str);
 int				ft_strbegins(const char *s1, const char *s2);
 int				ft_strends(const char *s1, const char *s2);
+char			*ft_lltoa(long long int n);
+char			*ft_ulltoa_basestr(unsigned long long int n, char *base_str);
 
-t_list			*ft_lstpop(t_list **list, t_list *item);
 const void		*ft_pushpop(const void *to_push);
 
 #endif
