@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/03 17:05:11 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/04 20:25:26 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,7 +99,12 @@ FNT = ft_atoi \
 		ft_lstpop \
 		ft_pushpop \
 		ft_lltoa \
-		ft_ulltoa_basestr
+		ft_ulltoa_basestr \
+		ft_strfuse \
+		ft_autofree_pushpop \
+		ft_autofree_begin \
+		ft_autofree \
+		ft_autofree_end
 
 INCLUDES = includes
 SRC_DIR = srcs

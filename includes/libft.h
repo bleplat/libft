@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/03 17:26:07 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/04 20:26:58 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -120,6 +120,15 @@ int				ft_putwstr(const int *str);
 int				ft_wstrlen(const int *str);
 
 /*
+** Autofree stuff
+*/
+
+const void		*ft_autofree_pushpop(const void *to_push);
+int				ft_autofree_begin(void);
+void			*ft_autofree(const void *to_free);
+void			ft_autofree_end(void);
+
+/*
 ** Other
 */
 
@@ -144,5 +153,11 @@ char			*ft_lltoa(long long int n);
 char			*ft_ulltoa_basestr(unsigned long long int n, char *base_str);
 
 const void		*ft_pushpop(const void *to_push);
+
+# define LIBFT_FREETASK_1ST 0x1
+# define LIBFT_FREETASK_2ND 0x2
+# define LIBFT_FREETASK_BOTH 0x3
+char			*ft_strfuse(char **s1, char **s2, int free_task);
+
 
 #endif
