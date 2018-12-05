@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/05 14:56:55 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/05 15:20:41 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,7 +106,10 @@ FNT = ft_atoi \
 		ft_autofree \
 		ft_autofree_end \
 		ft_random \
-		ft_urandom
+		ft_urandom \
+		ft_llrandom \
+		ft_ullrandom \
+		ft_abs
 
 INCLUDES = includes
 SRC_DIR = srcs

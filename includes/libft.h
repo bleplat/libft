@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/05 14:59:36 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/05 15:20:18 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -151,6 +151,7 @@ int				ft_strbegins(const char *s1, const char *s2);
 int				ft_strends(const char *s1, const char *s2);
 char			*ft_lltoa(long long int n);
 char			*ft_ulltoa_basestr(unsigned long long int n, char *base_str);
+int				ft_abs(int nb);
 
 const void		*ft_pushpop(const void *to_push);
 
@@ -160,7 +161,9 @@ const void		*ft_pushpop(const void *to_push);
 
 char			*ft_strfuse(char **s1, char **s2, int free_task);
 
-t_llint			ft_random(void);
-t_ullint		ft_urandom(void);
+int				ft_random(void);
+unsigned int	ft_urandom(void);
+t_llint			ft_llrandom(void);
+t_ullint		ft_ullrandom(void);
 
 #endif

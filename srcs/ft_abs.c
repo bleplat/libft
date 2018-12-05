@@ -1,22 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_urandom.c                                       :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/05 14:55:05 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/05 15:17:03 by bleplat          ###   ########.fr       */
+/*   Created: 2018/12/05 15:18:47 by bleplat           #+#    #+#             */
+/*   Updated: 2018/12/05 15:21:05 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
-
-unsigned int		ft_urandom(void)
+int			ft_abs(int nb)
 {
-	int		rst;
-
-	rst = ft_random();
-	return ((unsigned int)((rst > 0) ? rst : -rst));
+	return ((nb > 0) ? nb : -nb);
 }
