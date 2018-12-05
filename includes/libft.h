@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/05 14:57:49 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/05 14:59:36 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,6 +157,7 @@ const void		*ft_pushpop(const void *to_push);
 # define LIBFT_FREETASK_1ST 0x1
 # define LIBFT_FREETASK_2ND 0x2
 # define LIBFT_FREETASK_BOTH 0x3
+
 char			*ft_strfuse(char **s1, char **s2, int free_task);
 
 t_llint			ft_random(void);
