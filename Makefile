@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/06 17:05:56 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/06 17:07:47 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -110,6 +110,7 @@ FNT = ft_atoi \
 		ft_llrandom \
 		ft_ullrandom \
 		ft_abs \
+		ft_memdel0 \
 		ft_memdel1
 
 INCLUDES = includes
