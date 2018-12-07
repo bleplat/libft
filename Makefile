@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/07 17:16:53 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/07 18:37:06 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -118,7 +118,13 @@ FNT = ft_atoi \
 		get_next_line \
 		ft_free0 \
 		ft_ptrcount \
-		ft_free_vectors0
+		ft_free_vectors0 \
+		ft_array_new \
+		ft_array_del \
+		ft_array_reserve \
+		ft_array_newitem \
+		ft_array_shrink \
+		ft_array_at
 
 INCLUDES = includes
 SRC_DIR = srcs
