@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/07 15:44:54 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/07 16:14:56 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,6 +128,8 @@ int				ft_autofree_begin(void);
 void			*ft_autofree(const void *to_free);
 void			ft_autofree_end(void);
 int				ft_autofree_end0(void);
+void			ft_autofree_abort(void);
+int				ft_autofree_abort0(void);
 
 /*
 ** Other

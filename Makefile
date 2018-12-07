@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/07 15:44:21 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/07 16:13:32 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,6 +106,8 @@ FNT = ft_atoi \
 		ft_autofree \
 		ft_autofree_end \
 		ft_autofree_end0 \
+		ft_autofree_abort \
+		ft_autofree_abort0 \
 		ft_random \
 		ft_urandom \
 		ft_llrandom \
