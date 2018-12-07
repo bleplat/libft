@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/07 17:11:53 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/07 17:17:23 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -167,6 +167,7 @@ int				ft_memdel0(void **to_free);
 int				ft_memdel1(void **to_free);
 int				ft_free0(void *to_free);
 int				ft_ptrcount(void **ptr);
+int				ft_free_vectors0(void *to_free, int layers);
 
 int				ft_random(void);
 unsigned int	ft_urandom(void);
