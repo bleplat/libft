@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/07 17:05:27 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/07 17:11:53 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,6 +166,7 @@ char			*ft_strfuse(char **s1, char **s2, int free_task);
 int				ft_memdel0(void **to_free);
 int				ft_memdel1(void **to_free);
 int				ft_free0(void *to_free);
+int				ft_ptrcount(void **ptr);
 
 int				ft_random(void);
 unsigned int	ft_urandom(void);

@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/07 17:03:34 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/07 17:12:10 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -116,7 +116,8 @@ FNT = ft_atoi \
 		ft_memdel0 \
 		ft_memdel1 \
 		get_next_line \
-		ft_free0
+		ft_free0 \
+		ft_ptrcount
 
 INCLUDES = includes
 SRC_DIR = srcs
