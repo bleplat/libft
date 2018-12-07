@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 17:45:38 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/06 17:04:20 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/07 16:38:18 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int			ft_memrealloc(void **mem, size_t *previous_size, size_t new_size)
 	void		*new_mem;
 	size_t		cp_len;
 
+	if (*previous_size == new_size)
+		return (0);
 	if (mem == NULL)
 		return (1);
 	new_mem = ft_memalloc(new_size);
