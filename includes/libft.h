@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/07 18:35:51 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/13 17:07:58 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -159,9 +159,10 @@ int				ft_abs(int nb);
 
 const void		*ft_pushpop(const void *to_push);
 
-# define LIBFT_FREETASK_1ST 0x1
-# define LIBFT_FREETASK_2ND 0x2
-# define LIBFT_FREETASK_BOTH 0x3
+# define FT_FREETASK_1ST 0x1
+# define FT_FREETASK_2ND 0x2
+# define FT_FREETASK_BOTH 0x3
+# define FT_FREETASK_ALWAY 0x4
 
 char			*ft_strfuse(char **s1, char **s2, int free_task);
 int				ft_memdel0(void **to_free);
@@ -174,5 +175,8 @@ int				ft_random(void);
 unsigned int	ft_urandom(void);
 t_llint			ft_llrandom(void);
 t_ullint		ft_ullrandom(void);
+
+int				ft_pow(int nb, int p);
+char			*ft_ldtoa(long double d, unsigned int precision);
 
 #endif

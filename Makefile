@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/08 18:52:37 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/13 16:57:19 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -126,7 +126,9 @@ FNT = ft_atoi \
 		ft_array_shrink \
 		ft_array_at \
 		ft_array_clear \
-		ft_array_reset
+		ft_array_reset \
+		ft_pow \
+		ft_ldtoa
 
 INCLUDES = includes
 SRC_DIR = srcs
