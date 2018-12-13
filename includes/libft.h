@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2018/12/13 18:16:16 by bleplat          ###   ########.fr       */
+/*   Updated: 2018/12/13 19:30:43 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -176,7 +176,8 @@ unsigned int	ft_urandom(void);
 t_llint			ft_llrandom(void);
 t_ullint		ft_ullrandom(void);
 
-int				ft_pow(int nb, int p);
+int				ft_pow(int nb, unsigned int p);
+t_llint			ft_llpow(t_llint nb, unsigned int p);
 char			*ft_ldtoa(long double d, unsigned int precision);
 void			ft_strcatchar(char *str, char c);
 

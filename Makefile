@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/13 18:16:04 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/13 19:30:57 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -128,6 +128,7 @@ FNT = ft_atoi \
 		ft_array_clear \
 		ft_array_reset \
 		ft_pow \
+		ft_llpow \
 		ft_strcatchar \
 		ft_ldtoa
 
@@ -140,6 +141,8 @@ CFLAGS = -Wall -Werror -Wextra -O3
 SRC = $(patsubst %, $(SRC_DIR)/%.c, $(FNT))
 OBJ = $(patsubst %, $(OBJ_DIR)/%.o, $(FNT))
 
+.PHONY: all clean fclean re
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -149,7 +152,7 @@ $(NAME): $(OBJ)
 $(OBJ_DIR):
 	mkdir -p $@
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INCLUDES)/libft.h | $(OBJ_DIR)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJ_DIR)
 	gcc $(CFLAGS) -o $@ -I $(INCLUDES) -c $<
 
 clean:
