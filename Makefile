@@ -6,7 +6,7 @@
 #    By: bleplat <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 09:05:04 by bleplat           #+#    #+#              #
-#    Updated: 2018/12/13 16:57:19 by bleplat          ###   ########.fr        #
+#    Updated: 2018/12/13 18:16:04 by bleplat          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -128,6 +128,7 @@ FNT = ft_atoi \
 		ft_array_clear \
 		ft_array_reset \
 		ft_pow \
+		ft_strcatchar \
 		ft_ldtoa
 
 INCLUDES = includes
