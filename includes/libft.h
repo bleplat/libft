@@ -6,7 +6,7 @@
 /*   By: bleplat <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 10:59:30 by bleplat           #+#    #+#             */
-/*   Updated: 2019/01/24 17:05:38 by bleplat          ###   ########.fr       */
+/*   Updated: 2019/01/24 17:41:31 by bleplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -184,5 +184,6 @@ int				ft_intsize(int i);
 
 void			ft_strputchr(char *str, char c);
 long double		ft_alt_round(long double d, unsigned int precision);
+char			*ft_strminfield(const char *str, int field_width);
 
 #endif
