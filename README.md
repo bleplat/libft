@@ -1,2 +1,2 @@
-# Hello
-I'm the README file
+# Old Libft
+new better libft here: https://github.com/bleplat/newlibft
